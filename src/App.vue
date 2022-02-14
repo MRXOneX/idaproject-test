@@ -37,7 +37,6 @@ export default {
 
   methods: {
     removeProduct(id) {
-      console.log(id)
       const products = JSON.parse(localStorage.getItem('products'))
 
       const newProducts = products.filter(product => product.id !== id)
