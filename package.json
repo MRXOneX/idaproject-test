@@ -7,10 +7,15 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@vuelidate/core": "^2.0.0-alpha.34",
+    "@vuelidate/validators": "^2.0.0-alpha.26",
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "uniqid": "^5.4.0",
+    "vue": "^3.0.0",
+    "vuelidate": "^0.7.7"
   },
   "devDependencies": {
+    "@types/uniqid": "^5.3.2",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0"
