@@ -18,6 +18,7 @@
 </template>
 
 <script>
+import uniqid from 'uniqid';
 // components
 import FormProduct from './components/FormProduct.vue'
 import Product from './components/Product.vue'
@@ -44,7 +45,9 @@ export default {
 
       localStorage.setItem('products', JSON.stringify(newProducts))
     },
-    onAddProduct(product) {
+
+
+    addProduct(product) {
       const previosProducts = JSON.parse(localStorage.getItem('products')) || []
       const currentProducts = [...previosProducts, {id: uniqid('', '-product'),...product}]
 

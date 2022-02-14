@@ -65,8 +65,7 @@
 <script>
 import useVuelidate from "@vuelidate/core";
 import { required, helpers  } from "@vuelidate/validators";
-//
-import uniqid from 'uniqid';
+
 
 
 export default {
@@ -85,7 +84,7 @@ export default {
         addProduct() {
             this.v$.form.$touch()
             if (!this.v$.form.$error) {
-                this.$emit('addProduct', this.form)
+                this.$emit('onAddProduct', this.form)
             }
         }
     },
